@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/kawaegle/GIT/C_learn'
+let g:netrw_dirhist_8='/home/kawaegle/HORLENGRE_1.3.9/HORLENGRE 1.3.9/Docs/Profile'
+let g:netrw_dirhist_7='/home/kawaegle/HORLENGRE_1.3.9/HORLENGRE 1.3.9/Docs'
+let g:netrw_dirhist_6='/home/kawaegle/HORLENGRE_1.3.9/HORLENGRE 1.3.9'
+let g:netrw_dirhist_5='/home/kawaegle/HORLENGRE_1.3.9/HORLENGRE 1.3.9/Docs/Profile'
+let g:netrw_dirhist_4='/home/kawaegle/HORLENGRE_1.3.9/HORLENGRE 1.3.9/Docs'
+let g:netrw_dirhist_3='/home/kawaegle/HORLENGRE_1.3.9/HORLENGRE 1.3.9/Docs/Hasard'
+let g:netrw_dirhist_2='/home/kawaegle/HORLENGRE_1.3.9/HORLENGRE 1.3.9/Docs'
+let g:netrw_dirhist_1='/home/kawaegle/HORLENGRE_1.3.9/HORLENGRE 1.3.9'
+let g:netrw_dirhist_0='/home/kawaegle/HORLENGRE_1.3.9/HORLENGRE 1.3.9/Docs/Devin'
