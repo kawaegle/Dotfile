@@ -10,7 +10,7 @@ fi
 
 save(){
 	printf "[+] Add ZSH config to your dotfile\n" && cp -r $HOME/.zsh $DOTDIR/
-	printf "[+] Add Neovim config to your dotfile\n" && cp -r $HOME/.config/nvim $DOTDIR/
+	printf "[+] Add Neovim config to your dotfile\n" && cp -r $HOME/.config/nvim $DOTDIR/ && rm -rf $DOTDIR/nvim/plugins
 	printf "[+] Add dunst config to your dotfile\n" && cp -r $HOME/.config/dunst $DOTDIR/
 	printf "[+] Add i3 config to your dotfile\n" && cp -r $HOME/.config/i3 $DOTDIR/
 	printf "[+] Add compositor config to your dotfile\n" && cp -r $HOME/.config/picom $DOTDIR/
