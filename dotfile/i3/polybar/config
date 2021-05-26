@@ -9,12 +9,12 @@
   bottom                = true
   cursor-click          = pointer
   cursor-scroll         = ns-resize
-  fixed-center          = true
+  fixed-center          = false
   foreground            = ${colors.foreground}
   height                = 30
   line-size             = 0
-  module-margin-left    = 5
-  module-margin-right   = 3
+  module-margin-left    = 1
+  module-margin-right   = 1
   radius                = 15%
   tray-position         = none
   font-0	       		= DevaVu Sans Mono:pixelsize=10;1
@@ -22,9 +22,9 @@
   font-2	        	= "Font Awesome 5 Free:style=Regular:pixelsize=10;1"
   font-3                = "Font Awesome 5 Free:style=Solid:pixelsize=10;1"
   font-4				= "Font Awesome 5 Brands:pixelsize=10;1"
-  modules-left          = date
+  modules-left          = date spotify spotify_prev spotify_pp spotify_next Pomodoro
   modules-center        = i3
-  modules-right         = wlan lan bluetooth pulseaudio spotify spotify_previous spotify_play_pause spotify_next battery
+  modules-right         = redshift wlan lan bluetooth pulseaudio battery
   scroll-down           = i3wm-wsprev
   scroll-up             = i3wm-wsnext
 
@@ -32,7 +32,6 @@
   type = internal/date
   interval = 10
   time = %H:%M
-  time-alt = %H:%M:%S
   format =  <label>
   label = %date% %time%
   label-font = 3
@@ -65,11 +64,6 @@
   format-connected = <label-connected>
   label-connected = 
 
-[module/bluetooth]
-  type = custom/script
-  interval = 2
-  exec = ~/.config/i3/Script/polybar/polybar_bluetooth.sh
-  click-left = exec ~/.config/i3/Script/script/toggle_bluetooth.sh
 
 [module/battery]
   type = internal/battery
@@ -81,16 +75,21 @@
   ramp-capacity-4 = 
   battery = BAT0
   adapter = AC
+
   format-charging = <animation-charging>  <label-charging>  
   label-charging = %percentage%
+  
   animation-charging-0 = 
   animation-charging-1 = 
   animation-charging-2 = 
   animation-charging-3 = 
   animation-charging-4 = 
   animation-charging-framerate = 10000
+
   format-discharging = <ramp-capacity> <label-discharging>  
   label-discharging = %percentage% 
+
+  label-full = ""
 
 [module/i3]
   type = internal/i3
@@ -122,25 +121,49 @@
   label-urgent-font = 3
   label-urgent-padding = 1
 
+[module/Pomodoro]
+	type=custom/script
+	interval = 2
+	exec = ~/.config/i3/polybar/script/polybar_pomodoro.sh
+	click-left = exec ~/.config/i3/Script/script/toggle_pomodoro.sh
+
+[module/bluetooth]
+  type = custom/script
+  interval = 2
+  exec = ~/.config/i3/polybar/script/polybar_bluetooth.sh
+  click-left = exec ~/.config/i3/Script/script/toggle_bluetooth.sh
+
 [module/spotify]
   type = custom/script
-  interval = 720
-  exec = echo "%{F#08b828}"
-  click-left = exec ~/.config/i3/Script/polybar_spotify.sh
+  exec-if = "pgrep spotify -x"
+  tail=true 
+  format-prefix = ""
+  format-prefix-foreground= #1db954
+  format = <label>
+  exec = ~/.config/i3/polybar/script/polybar_spotify.sh
 
-[module/spotify_play_pause]
+[module/spotify_pp]
   type = custom/script
-  exec = echo ""
-  click-left = exec playerctl play-pause spotify
+  exec-if = "pgrep spotify -x"
+  exec = ~/.config/i3/polybar/script/show_spotify.sh
+  click-left = exec ~/.config/script/show_spotify.sh
 
-[module/spotify_previous]
+[module/spotify_prev]
   type = custom/script
+  exec-if = "pgrep spotify -x"
   exec = echo ""
   format = <label>
-  click-left = exec playerctl previous spotify
+  click-left = exec playerctl previous --player spotify
 
 [module/spotify_next]
   type = custom/script
+  exec-if = "pgrep spotify -x"
   exec = echo ""
   format = <label>
-  click-left = exec playerctl next spotify
+  click-left = exec playerctl next --player spotify
+
+[module/redshift]
+  type=custom/script
+  interval = 2
+  exec =echo "%{F#802020}"
+  click-left = ~/.config/i3/Script/script/toggle_redshift.sh 

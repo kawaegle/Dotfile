@@ -9,7 +9,6 @@
     "epitech-c-cpp-headers.autoGenerateClasses": true,
     "epitech-c-cpp-headers.indentAccessSpecifiers": true,
     "files.defaultLanguage": "python3",
-    "workbench.colorTheme": "Neofloss",
     "workbench.preferredDarkColorTheme": "Neofloss",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.tips.enabled": false,
@@ -43,5 +42,6 @@
     "C_Cpp.updateChannel": "Insiders",
     "editor.insertSpaces": false,
     "platformio-ide.disablePIOHomeStartup": true,
-    "terminal.integrated.rendererType": "dom"
+    "terminal.integrated.rendererType": "dom",
+    "workbench.colorTheme": "Tokyo City"
 }

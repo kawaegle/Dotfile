@@ -30,14 +30,15 @@ set $ws9 "9"
 set $ws10 "10"
 
 ## Startup
+exec --no-startup-id xbacklight -set 35 &
 exec_always xrdb ~/.Xresources
 exec_always --no-startup-id ~/.config/i3/Script/script/start_polybar.sh &
-exec_always --no-startup-id eval ssh-agent &
-exec xbacklight
-exec picom & 
+exec --no-startup-id eval ssh-agent &
 exec --no-startup-id dunst &
-exec --no-startup-id ~/.config/i3/Script/script/wallpaper.sh single 61 & # set a single walpaper with unique id 
+exec --no-startup-id ~/.config/i3/Script/script/wallpaper.sh single 61 & 
+# set a single walpaper with unique id 
 exec --no-startup-id discord
+exec --no-startup-id picom & 
 #exec --no-startup-id ~/.config/i3/Script/script/wallpaper.sh multi min max & # set a range of wallpaper that change every 15 min
 
 ## Font for window titles. Will also be used by the bar unless a different font
@@ -137,9 +138,9 @@ bindsym $voldown exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym $volmute exec --no-startup-id pactl set-sink-mute 0 toggle
 
 ## Media player controls
-bindsym $playpause exec playerctl play-pause
-bindsym $medianetx exec playerctl next
-bindsym $mediaprev exec playerctl previous
+bindsym $playpause exec playerctl --player spotify play-pause
+bindsym $medianetx exec playerctl --player spotify next
+bindsym $mediaprev exec playerctl -- player spotifyprevious
 
 ## Brightness
 bindsym $lightup exec xbacklight -inc 5
@@ -150,6 +151,7 @@ for_window [class="^.*"] border pixel 2
 for_window [title="Friends List"] floating enable
 for_window [title="Steam - News"] floating enable
 for_window [class="hexachat"] floating enable
+for_window [class="Pavucontrol"] floating enable
 for_window [title="ToDo manager"] floating enable
 hide_edge_borders smart
 focus_follows_mouse no
@@ -165,6 +167,7 @@ bindsym $mod+$S+s exec spotify
 bindsym $mod+$S+c exec code 
 bindsym $mod+$S+w exec libreoffice --writer
 bindsym $print exec scrot Pictures/Screenshot_$(date +"%F")_$(date +"%H-%M").png
+bindsym $S+$print exec scrot -s Pictures/Screenshot_$(date +"%F")_$(date +"%H-%M").png
 bindsym $mod+l exec i3lock-fancy-multimonitor -p -b=50
 
 ## Script 

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-rofi_command="rofi -theme .config/i3/Rofi/4.rasi"
+rofi_command="rofi -theme .config/i3/Rofi_colo/4.rasi"
 
 # Options
 power=""

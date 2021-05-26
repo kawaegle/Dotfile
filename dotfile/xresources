@@ -1,12 +1,11 @@
 URxvt*scrollTtyOutput: false
 URxvt*scrollBar: false
-URxvt*beep: false
-URxvt*font: xft:Hack Nerd Font Mono:style=Regular:size=10
-URxvt.letterSpace: -1
+UURxvt*font:   xft:Hack Nerd Font Mono:style=Regular:size=12
+URxvt*beep: false 
 
 
-URxvt.depth: 32
-URxvt.background: [95]#000000
-URxvt.foreground: #FFFFFF
+URxvt*depth: 32
+URxvt*background: [85]#000000
+URxvt*foreground: #FFFFFF
 
-URxvt.print-pipe: "cat > /dev/null"
+URxvt*print-pipe: "cat > /dev/null"
