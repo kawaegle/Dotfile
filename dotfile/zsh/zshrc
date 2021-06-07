@@ -2,7 +2,8 @@ unsetopt BEEP
 export TERM="rxvt"
 export PAGER="less"
 export EDITOR="nvim"
-export PATH="$PATH:$HOME/.local/bin:$HOME/.script/"
+export PATH="$PATH:$HOME/.local/bin/"
+
 autoload -Uz compinit
 autoload -U promptinit
 autoload -U colors
@@ -11,9 +12,9 @@ promptinit
 compinit
 
 #Alias and Plugins
-source ~/.zsh/alias
+source ~/.config/zsh/alias
 setopt auto_cd
-for p in $HOME/.zsh/plugins/*
+for p in $HOME/.config/zsh/plugins/*
 do
     source $p
 done
@@ -32,7 +33,7 @@ setopt hist_find_no_dups
 
 autoload -U history-search-end
 
-HISTFILE=$HOME/.zsh/hist
+HISTFILE=$HOME/.config/zsh/hist
 HISTSIZE=1000
 SAVEHIST=1000
 zle -N history-beginning-search-backward-end history-search-end
