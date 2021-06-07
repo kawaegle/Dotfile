@@ -9,7 +9,7 @@ else
 fi
 
 save(){
-	printf "[+] Add ZSH config to your dotfile\n" && cp -r $HOME/.zsh $DOTDIR/
+	printf "[+] Add ZSH config to your dotfile\n" && cp -r $HOME/.config/zsh $DOTDIR/ && rm -rf $DOTDIR/zsh/hist
 	printf "[+] Add Neovim config to your dotfile\n" && cp -r $HOME/.config/nvim $DOTDIR/ && rm -rf $DOTDIR/nvim/plugins
 	printf "[+] Add dunst config to your dotfile\n" && cp -r $HOME/.config/dunst $DOTDIR/
 	printf "[+] Add i3 config to your dotfile\n" && cp -r $HOME/.config/i3 $DOTDIR/
@@ -17,16 +17,13 @@ save(){
 	printf "[+] Add Ranger config to your dotfile\n" && cp -r $HOME/.config/ranger $DOTDIR/
 	printf "[+] Add Xresources config to your dotfile\n" && cp -r $HOME/.Xresources $DOTDIR/xresources
 	printf "[+] Add Vscode config to your dotfile\n" && cp -r $HOME/.config/Code\ -\ OSS/User/settings.json $DOTDIR/vscode_settings.json
-	(
-		cd ~/GIT/Dotfile/
-		git add .
-		git commit -m "Add some Dotfile"
-		git push origin master
-	)
+
+	printf "[!] Dotfile Saved\n"
+	update
 }
 
 restore(){
-	printf "[+] Restore ZSH" && cp -r $DOTDIRzsh $HOME/.zsh && ln -sf $HOME/.zsh/zshrc $HOME/.zshrc
+	printf "[+] Restore ZSH" && cp -r $DOTDIR/zsh $HOME/.config/zsh && ln -sf $HOME/.config/zsh/zshrc $HOME/.zshrc
 	printf "[+] Restore Neovim" && cp -r $DOTDIRnvim $HOME/.config/nvim
 	printf "[+] Restore dunst" && cp -r $DOTDIRdunst $HOME/.config/dunst
 	printf "[+] Restore i3" && cp -r $DOTDIRi3 $HOME/.config/i3
@@ -38,10 +35,21 @@ restore(){
 	printf "[!] Dotfile restored"
 }
 
+update(){
+	(
+		cd $DOTDIR
+		git add .
+		git commit -m "Add some Dotfile"
+		git push origin master
+	)
+}
+
 if [[ $1 == [sS]ave ]] || [[ $1 == [sS] ]];then
 	save
 elif [[ $1 == [rR]estore ]] || [[ $1 == [rR] ]]; then
 	restore
+elif [[ $1 == [uU]pdate ]] || [[ $1 == [uU] ]]; then
+	update
 else
-	printf "Usage:\n\tTo save: [sS]ave\n\tTo restore: [rR]estore\n"
+	printf "Usage:\n\t[sS]ave\n\t[rR]estore\n\t[uU]pdate\n"
 fi 
