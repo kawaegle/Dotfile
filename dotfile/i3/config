@@ -1,6 +1,6 @@
 ## Variable
 set $mod Mod4
-set $CTRL control
+set $CTRL Control_L
 set $ALT Mod1
 set $volup XF86AudioRaiseVolume
 set $voldown XF86AudioLowerVolume
@@ -30,16 +30,18 @@ set $ws9 "9"
 set $ws10 "10"
 
 ## Startup
-exec --no-startup-id xbacklight -set 35 &
 exec_always xrdb ~/.Xresources
-exec_always --no-startup-id ~/.config/i3/Script/script/start_polybar.sh &
+exec_always --no-startup-id ~/.config/i3/Script/script/start_polybar.sh 
 exec --no-startup-id eval ssh-agent &
+exec --no-startup-id xbacklight -set 35
 exec --no-startup-id dunst &
-exec --no-startup-id ~/.config/i3/Script/script/wallpaper.sh single 61 & 
+exec --no-startup-id ~/.config/i3/Script/script/wallpaper.sh single 61 &
 # set a single walpaper with unique id 
+#exec --no-startup-id ~/.config/i3/Script/script/wallpaper.sh multi min max & 
+# set a range of wallpaper that change every 15 min
+exec --no-startup-id ~/.config/i3/Script/script/toggle_redshift.sh
 exec --no-startup-id discord
 exec --no-startup-id picom & 
-#exec --no-startup-id ~/.config/i3/Script/script/wallpaper.sh multi min max & # set a range of wallpaper that change every 15 min
 
 ## Font for window titles. Will also be used by the bar unless a different font
 font pango:monospace 8
@@ -166,8 +168,8 @@ bindsym $mod+$S+d exec discord
 bindsym $mod+$S+s exec spotify
 bindsym $mod+$S+c exec code 
 bindsym $mod+$S+w exec libreoffice --writer
-bindsym $print exec scrot Pictures/Screenshot_$(date +"%F")_$(date +"%H-%M").png
-bindsym $S+$print exec scrot -s Pictures/Screenshot_$(date +"%F")_$(date +"%H-%M").png
+bindsym --release $print exec ~/.config/i3/Script/script/screenshoot.sh
+bindsym --release $Mod+$S+$print exec ~/.config/i3/Script/script/screenshoot.sh selection
 bindsym $mod+l exec i3lock-fancy-multimonitor -p -b=50
 
 ## Script 

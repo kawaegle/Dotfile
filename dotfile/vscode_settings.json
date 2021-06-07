@@ -43,5 +43,6 @@
     "editor.insertSpaces": false,
     "platformio-ide.disablePIOHomeStartup": true,
     "terminal.integrated.rendererType": "dom",
-    "workbench.colorTheme": "Tokyo City"
+    "workbench.colorTheme": "Tokyo City",
+    "terminal.integrated.sendKeybindingsToShell": true
 }

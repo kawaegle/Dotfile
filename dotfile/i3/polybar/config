@@ -146,7 +146,7 @@
   type = custom/script
   exec-if = "pgrep spotify -x"
   exec = ~/.config/i3/polybar/script/show_spotify.sh
-  click-left = exec ~/.config/script/show_spotify.sh
+  click-left = exec ~/.config/i3/Script/script/toggle_spotify.sh
 
 [module/spotify_prev]
   type = custom/script

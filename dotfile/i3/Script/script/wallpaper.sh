@@ -42,8 +42,10 @@ done
 
 if [[ $1 == "single" ]]; then
 	set_single_wall $2
+	exec ~/.config/i3/Script/script/toggle_redshift.sh
 elif [[ $1 == "multi" ]]; then
 	wall=$(shuf -i $2-$3 -n 1)
 	echo $wall
 	set_multi_wall $2 $3
+	exec ~/.config/i3/Script/script/toggle_redshift.sh
 fi
