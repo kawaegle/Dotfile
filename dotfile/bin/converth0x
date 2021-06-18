@@ -1,0 +1,69 @@
+#! /bin/python3
+
+import argparse
+
+class digit:
+	def __init__(self, value):
+		self.value = int(value)
+
+	def tobin(self):
+		return bin(self.value)
+	
+	def tohex(self):
+		return hex(self.value)
+	
+	def todigit(self):
+		return self.value
+	
+class hexa:
+	def __init__(self, value):
+		self.value = value
+
+	def tobin(self):
+		self.value = int(self.value, 16)
+		return bin(self.value)
+	
+	def tohex(self):
+		return "0x"+self.value
+	
+	def todigit(self):
+		return int(self.value, 16)
+
+class binary:
+	def __init__(self, value):
+		self.value = value
+
+	def tobin(self):
+		return "0b"+self.value
+	
+	def tohex(self):
+		self.value = int(self.value, 2)
+		return hex(self.value)
+	
+	def todigit(self):
+		return int(self.value,2)
+
+parser = argparse.ArgumentParser(description='convert digit, hex, bin in each other on demande.')
+parser.add_argument('origin', metavar='init', help='the initial base.')
+parser.add_argument('value', metavar='value', help='the initial value.')
+parser.add_argument('finish', metavar='end', help='the final base.')
+args = parser.parse_args()
+
+init = args.origin
+value = args.value
+finish = args.finish
+
+if init == "hex":
+	i = hexa(value)
+elif init == "bin":
+	i = binary(value)
+elif init == "digit":
+	i = digit(value)
+
+if finish == "hex":
+	print(i.tohex())
+elif finish == "bin":
+	print(i.tobin())
+elif finish == "digit":
+	print(i.todigit())
+	
