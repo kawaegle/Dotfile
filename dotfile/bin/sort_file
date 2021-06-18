@@ -1,0 +1,29 @@
+#! /bin/bash
+
+if [[ ! -e $2 ]]
+then
+	echo "[!] you need a file that exist"
+	exit
+fi
+
+case $1 in
+	1)
+		echo "[!] sort $2 alpha"
+		sort $2 -o $2
+		;;
+	2)
+		echo "[!] sort $2 reverse alpha"
+		sort -r $2 -o $2
+		;;
+	3)
+		echo "[!] sort $2 unique"
+		sort -u $2 -o $2
+		;;
+	4)
+		echo "[!] sort $2 random"
+		sort -R $2 -o $2
+		;;
+	*)
+		printf "usage:\n\t1) sort file alpha\n\t2) sort file reverse order \n\t3) check file for duplicate line\n\t4) sort file randomly\n\thelp) print help\n"
+		;;
+esac
