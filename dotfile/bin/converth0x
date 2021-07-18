@@ -1,47 +1,79 @@
 #! /bin/python3
 
 import argparse
+import base64
+
+class base:
+	def __init__(self, value):
+		self.value = str(value)
+
+	def to_b64(self):
+		return base64.b64encode(bytes.fromhex(str(self.value)))
+
+	def to_ascii(self):
+		return str(base64.b64decode(self.value), "ascii")
+
+	def to_utf8(self):
+		return str(base64.b64decode(self.value), "utf-8")
+
+	def to_bin(self):
+		return "Work in progress"
+
+	def to_hex(self):
+		return "Work in progress"
+
+	def to_digit(self):
+		return "Work in progress"
 
 class digit:
 	def __init__(self, value):
 		self.value = int(value)
 
-	def tobin(self):
+	def to_bin(self):
 		return bin(self.value)
-	
-	def tohex(self):
+
+	def to_hex(self):
 		return hex(self.value)
-	
-	def todigit(self):
+
+	def to_digit(self):
 		return self.value
-	
+
+	def to_b64(self):
+		return base64.b64encode(bytes.fromhex(str(self.value)))
+
 class hexa:
 	def __init__(self, value):
 		self.value = value
 
-	def tobin(self):
+	def to_bin(self):
 		self.value = int(self.value, 16)
 		return bin(self.value)
-	
-	def tohex(self):
+
+	def to_hex(self):
 		return "0x"+self.value
-	
-	def todigit(self):
+
+	def to_digit(self):
 		return int(self.value, 16)
+	
+	def to_b64(self):
+		return base64.b64encode(bytes.fromhex(str(self.value)))
 
 class binary:
 	def __init__(self, value):
 		self.value = value
 
-	def tobin(self):
+	def to_bin(self):
 		return "0b"+self.value
-	
-	def tohex(self):
+
+	def to_hex(self):
 		self.value = int(self.value, 2)
 		return hex(self.value)
-	
-	def todigit(self):
+
+	def to_digit(self):
 		return int(self.value,2)
+	
+	def to_b64(self):
+		return base64.b64encode(bytes.fromhex(str(self.value)))
 
 parser = argparse.ArgumentParser(description='convert digit, hex, bin in each other on demande.')
 parser.add_argument('origin', metavar='init', help='the initial base.')
@@ -59,11 +91,18 @@ elif init == "bin":
 	i = binary(value)
 elif init == "digit":
 	i = digit(value)
+elif init == "b64":
+	i = base(value)
 
 if finish == "hex":
-	print(i.tohex())
+	print(i.to_hex())
 elif finish == "bin":
-	print(i.tobin())
+	print(i.to_bin())
 elif finish == "digit":
-	print(i.todigit())
-	
+	print(i.to_digit())
+elif finish == "b64":
+	print(i.to_b64())
+elif finish == "ascii":
+	print(i.to_ascii())
+elif finish == "utf8":
+	print(i.to_utf8())
