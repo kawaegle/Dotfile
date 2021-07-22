@@ -2,7 +2,7 @@ unsetopt BEEP
 export TERM="rxvt"
 export PAGER="less"
 export EDITOR="nvim"
-export PATH="$PATH:$HOME/.local/bin/"
+export PATH="$PATH:$HOME/.local/bin"
 
 autoload -Uz compinit
 autoload -U promptinit
@@ -57,3 +57,5 @@ if [ -z "$LS_COLORS" ]; then
 else
   zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 fi
+
+setopt interactive_comments
