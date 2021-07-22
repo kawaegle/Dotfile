@@ -3,9 +3,11 @@
 rofi_command="rofi -theme .config/i3/Rofi_colo/3.rasi"
 
 # Options
-single=""
-dual=""
-new=""
+1single=""
+2single=""
+extand=""
+duplicate=""
+
 
 # Variable passed to rofi
 options="$single\n$dual\n$new"

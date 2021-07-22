@@ -18,15 +18,13 @@
   radius                = 15%
   tray-position         = none
   font-0	       		= DevaVu Sans Mono:pixelsize=10;1
-  font-1            	= NotoSans:size=10
+  font-1                = NotoSans:size=10
   font-2	        	= "Font Awesome 5 Free:style=Regular:pixelsize=10;1"
   font-3                = "Font Awesome 5 Free:style=Solid:pixelsize=10;1"
   font-4				= "Font Awesome 5 Brands:pixelsize=10;1"
-  modules-left          = date spotify spotify_prev spotify_pp spotify_next Pomodoro
+  modules-left          = date spotify spotify_prev spotify_pp spotify_next Pomodoro VS screenshot
   modules-center        = i3
-  modules-right         = redshift wlan lan bluetooth pulseaudio battery
-  scroll-down           = i3wm-wsprev
-  scroll-up             = i3wm-wsnext
+  modules-right         = update redshift wifi lan bluetooth pulseaudio battery
 
 [module/date]
   type = internal/date
@@ -49,21 +47,23 @@
   ramp-volume-1 = 
   ramp-volume-2 = 
 
-[module/wlan]
-  type = internal/network
-  interface = wlo1
-  format-disconnected = <label-disconnected>
-  label-disconnected = 
-  label-disconnected-foreground = #888880
-  format-connected = <label-connected>
-  label-connected = 
-  
+[module/wifi]
+  type = custom/script
+  exec = ~/.config/i3/Script/polybar/polybar_wifi.sh
+  click-left = exec ~/.config/i3/Script/rofi/rofi_wifi.sh
+  interval = 300
+
 [module/lan]
   type = internal/network
   interface = eno1
   format-connected = <label-connected>
   label-connected = 
 
+[module/backlight]
+  type = internal/backlight
+  card = intel_backlight
+  format = <label>
+  label = %percentage%%
 
 [module/battery]
   type = internal/battery
@@ -123,29 +123,28 @@
 
 [module/Pomodoro]
 	type=custom/script
-	interval = 2
-	exec = ~/.config/i3/polybar/script/polybar_pomodoro.sh
+	exec = ~/.config/i3/Script/polybar/polybar_pomodoro.sh
 	click-left = exec ~/.config/i3/Script/script/toggle_pomodoro.sh
 
 [module/bluetooth]
   type = custom/script
   interval = 2
-  exec = ~/.config/i3/polybar/script/polybar_bluetooth.sh
+  exec = ~/.config/i3/Script/polybar/polybar_bluetooth.sh
   click-left = exec ~/.config/i3/Script/script/toggle_bluetooth.sh
 
 [module/spotify]
   type = custom/script
   exec-if = "pgrep spotify -x"
-  tail=true 
+  tail=true
   format-prefix = ""
   format-prefix-foreground= #1db954
   format = <label>
-  exec = ~/.config/i3/polybar/script/polybar_spotify.sh
+  exec = ~/.config/i3/Script/polybar/polybar_spotify.sh
 
 [module/spotify_pp]
   type = custom/script
   exec-if = "pgrep spotify -x"
-  exec = ~/.config/i3/polybar/script/show_spotify.sh
+  exec = ~/.config/i3/Script/polybar/show_spotify.sh
   click-left = exec ~/.config/i3/Script/script/toggle_spotify.sh
 
 [module/spotify_prev]
@@ -164,6 +163,24 @@
 
 [module/redshift]
   type=custom/script
-  interval = 2
-  exec =echo "%{F#802020}"
+  exec =echo "%{F#802020}"
   click-left = ~/.config/i3/Script/script/toggle_redshift.sh 
+
+[module/VS]
+  type = custom/script
+  exec = echo "%{F#015ffd}"
+  click-left = code
+  tail = true
+
+[module/screenshot]
+  type = custom/script
+  exec = echo ""
+  click-left = ~/.config/i3/Script/script/screenshoot.sh 
+  tail = true
+
+[module/update]
+  type = custom/script
+  exec = ~/.config/i3/Script/polybar/polybar_update.sh
+  format = <label>
+  format-prefix =  
+  interval = 86000

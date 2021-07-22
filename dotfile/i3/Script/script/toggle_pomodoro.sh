@@ -1,6 +1,6 @@
 #/!/bin/bash
 
-stat=`cat /tmp/pomostat`
+stat=$(cat /tmp/pomostat)
 
 if [[ $stat == 0 ]]
 then

@@ -33,16 +33,18 @@
     "window.title": "${activeEditorShort}",
     "window.menuBarVisibility": "toggle",
     "window.restoreWindows": "none",
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
     "C_Cpp.updateChannel": "Insiders",
     "editor.insertSpaces": false,
     "platformio-ide.disablePIOHomeStartup": true,
     "terminal.integrated.rendererType": "dom",
     "workbench.colorTheme": "Tokyo City",
-    "terminal.integrated.sendKeybindingsToShell": true
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "platformio-ide.activateOnlyOnPlatformIOProject": true,
+    "platformio-ide.customPATH": "",
+    "python.autoComplete.addBrackets": true,
+    "python.autoUpdateLanguageServer": false,
+    "editor.snippetSuggestions": "bottom"
 }

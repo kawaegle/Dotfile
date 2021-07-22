@@ -33,13 +33,13 @@ set $ws10 "10"
 exec_always xrdb ~/.Xresources
 exec_always --no-startup-id ~/.config/i3/Script/script/start_polybar.sh 
 exec --no-startup-id eval ssh-agent &
-exec --no-startup-id xbacklight -set 35
+exec --no-startup-id xbacklight -set 25
 exec --no-startup-id dunst &
-exec --no-startup-id ~/.config/i3/Script/script/wallpaper.sh single 61 &
 # set a single walpaper with unique id 
-#exec --no-startup-id ~/.config/i3/Script/script/wallpaper.sh multi min max & 
+exec --no-startup-id wallpaper single 61
 # set a range of wallpaper that change every 15 min
-exec --no-startup-id ~/.config/i3/Script/script/toggle_redshift.sh
+#exec --no-startup-id ~/.config/i3/Script/script/wallpaper.sh multi min max & 
+exec --no-startup-id printf "ON_OFF = off\nTEMP = 4500\n" > $HOME/.cache/redshift && ~/.config/i3/Script/script/toggle_redshift.sh 
 exec --no-startup-id discord
 exec --no-startup-id picom & 
 
@@ -142,19 +142,21 @@ bindsym $volmute exec --no-startup-id pactl set-sink-mute 0 toggle
 ## Media player controls
 bindsym $playpause exec playerctl --player spotify play-pause
 bindsym $medianetx exec playerctl --player spotify next
-bindsym $mediaprev exec playerctl -- player spotifyprevious
+bindsym $mediaprev exec playerctl --player spotify previous
 
 ## Brightness
 bindsym $lightup exec xbacklight -inc 5
 bindsym $lightdown exec xbacklight -dec 5
 
 ## WM setting
-for_window [class="^.*"] border pixel 2
 for_window [title="Friends List"] floating enable
 for_window [title="Steam - News"] floating enable
-for_window [class="hexachat"] floating enable
-for_window [class="Pavucontrol"] floating enable
+for_window [title="my_app"] floating enable
 for_window [title="ToDo manager"] floating enable
+for_window [class="calibre"] floating enable
+for_window [class="^.*"] border pixel 2
+for_window [class="hexchat"] floating enable
+for_window [class="Pavucontrol"] floating enable
 hide_edge_borders smart
 focus_follows_mouse no
 gaps inner 5
@@ -162,20 +164,19 @@ gaps outer 3
 smart_gaps on
 
 ## Shortcut
-bindsym $mod+$ALT+f exec firefox --private-window
 bindsym $mod+$S+f exec firefox
 bindsym $mod+$S+d exec discord
 bindsym $mod+$S+s exec spotify
 bindsym $mod+$S+c exec code 
 bindsym $mod+$S+w exec libreoffice --writer
-bindsym --release $print exec ~/.config/i3/Script/script/screenshoot.sh
-bindsym --release $Mod+$S+$print exec ~/.config/i3/Script/script/screenshoot.sh selection
 bindsym $mod+l exec i3lock-fancy-multimonitor -p -b=50
 
 ## Script 
+bindsym --release $print exec ~/.config/i3/Script/script/screenshoot.sh
+bindsym --release $S+$print exec ~/.config/i3/Script/script/screenshoot.sh selection
 bindsym $mod+p exec ~/.config/i3/Script/rofi/rofi_screen.sh
 bindsym $mod+b exec ~/.config/i3/Script/rofi/rofi_bluetooth.sh
-bindsym $mod+$S+p exec ~/.local/bin/pomodoro.py
+bindsym $mod+$S+p exec ~/.config/i3/Script/script/toggle_pomodoro.sh 
 bindsym $mod+t exec ~/.config/i3/Script/rofi/rofi_todo.sh
 
 ####### TOOOO DOOOOOO ###########
@@ -193,10 +194,10 @@ set_from_resource $white color7
 
 ## Color
 # class                 border  bground text    indicator   child_border
-client.focused          $bg	$bg	$fg	$bg	    $blue
-client.focused_inactive $white	$white	$fg	$bg	    $blue
-client.unfocused        $bg	$bg	$fg	$bg	    $blue
-client.urgent           $red	$bg	$fg	$red	    $blue
-client.placeholder      $bg	$bg	$fg	$bg	    $blue
+# client.focused          $bg	$bg	$fg	$bg	    $blue
+# client.focused_inactive $white	$white	$fg	$bg	    $blue
+# client.unfocused        $bg	$bg	$fg	$bg	    $blue
+# client.urgent           $red	$bg	$fg	$red	    $blue
+# client.placeholder      $bg	$bg	$fg	$bg	    $blue
 
-client.background       $bg
+# client.background       $bg
