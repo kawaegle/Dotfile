@@ -1,5 +1,5 @@
 #! /bin/bash
-DOTDIR="~/.local/Dotfile/dotfile"
+DOTDIR=~/.local/Dotfile/dotfile
 DIR=$DOTDIR/..
 
 if [[ -d $DOTDIR ]];then
