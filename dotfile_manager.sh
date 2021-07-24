@@ -24,6 +24,8 @@ save(){
 	sleep .2
 	printf "[+] Add Xresources config to your dotfile\n" && cp -r $HOME/.Xresources $DOTDIR/xresources
 	sleep .2
+	printf "[+] Add Xinitrc config to your dotfile\n" && cp $HOME/.xinitrc $DOTDIR/Xinitrc
+	sleep .2
 	printf "[+] Add Vscode config to your dotfile\n" && cp -r $HOME/.config/Code\ -\ OSS/User/settings.json $DOTDIR/vscode_settings.json
 	sleep .2
 
@@ -53,7 +55,8 @@ restore(){
 	sleep .2
 	printf "[+] Restore Vscode\n" && cp -r $DOTDIR/vscode_settings.json $HOME/.config/Code\ -\ OSS/User/settings.json
 	sleep .2
-
+	printf "[+] Restore Xinitrc\n" && cp -r $DOTDIR/xinitrc $HOME/.xinitrc
+	sleep .2
 	printf "[!] Dotfile restored"
 }
 
