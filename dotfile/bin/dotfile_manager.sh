@@ -1,0 +1,1 @@
+/home/kawaegle/.local/share/Dotfile/dotfile_manager.sh

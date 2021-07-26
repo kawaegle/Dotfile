@@ -10,6 +10,8 @@ else
 fi
 
 save(){
+	printf "[+] Add Bin config to your dotfile\n " && cp -r $HOME/.local/bin/ $DOTDIR/
+	sleep .2
 	printf "[+] Add ZSH config to your dotfile\n" && cp -r $HOME/.config/zsh $DOTDIR/ && rm -rf $DOTDIR/zsh/hist
 	sleep .2
 	printf "[+] Add Neovim config to your dotfile\n" && cp -r $HOME/.config/nvim $DOTDIR/ && rm -rf $DOTDIR/nvim/plugins && rm -rf $DOTDIR/nvim/.netrwhist
@@ -39,6 +41,8 @@ save(){
 }
 
 restore(){
+	printf "[+] Restore Bin\n" && cp -r $DOTDIR/bin/* $HOME/.local/bin/ 
+	sleep .2
 	printf "[+] Restore ZSH\n" && cp -r $DOTDIR/zsh $HOME/.config/zsh && ln -sf $HOME/.config/zsh/zshrc $HOME/.zshrc
 	sleep .2
 	printf "[+] Restore Neovim\n" && cp -r $DOTDIR/nvim $HOME/.config/nvim
@@ -55,9 +59,9 @@ restore(){
 	sleep .2
 	printf "[+] Restore Vscode\n" && cp -r $DOTDIR/vscode_settings.json $HOME/.config/Code\ -\ OSS/User/settings.json
 	sleep .2
-	printf "[+] Restore Xinitrc\n" && cp -r $DOTDIR/xinitrc $HOME/.xinitrc
+	printf "[+] Restore Xinitrc\n" && cp -r $DOTDIR/Xinitrc $HOME/.xinitrc
 	sleep .2
-	printf "[!] Dotfile restored"
+	printf "[!] Dotfile restored\n"
 }
 
 update(){
