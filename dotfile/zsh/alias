@@ -13,6 +13,7 @@ alias gb='git branch'
 alias gba='git branch --all'
 alias ga='git add'
 alias gf='git fetch'
+alias gdiff='git diff'
 alias gstat='git status'
 
 alias nmap_open_ports="nmap --open"

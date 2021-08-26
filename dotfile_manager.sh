@@ -26,11 +26,10 @@ save(){
 	sleep .2
 	printf "[+] Add Xresources config to your dotfile\n" && cp -r $HOME/.Xresources $DOTDIR/xresources
 	sleep .2
-	printf "[+] Add Xinitrc config to your dotfile\n" && cp $HOME/.xinitrc $DOTDIR/Xinitrc
-	sleep .2
 	printf "[+] Add Vscode config to your dotfile\n" && cp -r $HOME/.config/Code\ -\ OSS/User/settings.json $DOTDIR/vscode_settings.json
 	sleep .2
-
+	printf "[+] Add Alacritty config to your dotfile\n" && cp -r $HOME/.config/alacritty.yml $DOTDIR/alacritty.yml
+	sleep .2
 	printf "[!] Dotfile Saved\n"
 	sleep 2
 	printf "\n\n[?] Do you want to push your dotfile to your repo ? [Y/n]"
@@ -59,7 +58,7 @@ restore(){
 	sleep .2
 	printf "[+] Restore Vscode\n" && cp -r $DOTDIR/vscode_settings.json $HOME/.config/Code\ -\ OSS/User/settings.json
 	sleep .2
-	printf "[+] Restore Xinitrc\n" && cp -r $DOTDIR/Xinitrc $HOME/.xinitrc
+	printf "[+] Restore Alacritty\n" && cp -r $DOTDIR/alacritty.yml $HOME/.config/alacritty.yml
 	sleep .2
 	printf "[!] Dotfile restored\n"
 }

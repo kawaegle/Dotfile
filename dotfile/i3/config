@@ -35,10 +35,7 @@ exec_always --no-startup-id ~/.config/i3/Script/script/start_polybar.sh
 exec --no-startup-id eval ssh-agent &
 exec --no-startup-id xbacklight -set 25
 exec --no-startup-id dunst &
-# set a single walpaper with unique id 
-exec --no-startup-id wallpaper single 61
-# set a range of wallpaper that change every 15 min
-#exec --no-startup-id ~/.config/i3/Script/script/wallpaper.sh multi min max & 
+exec --no-startup-id feh --bg-scale ~/Wallpaper/wallpaper_23.jpg 
 exec --no-startup-id printf "ON_OFF = off\nTEMP = 4500\n" > $HOME/.cache/redshift && ~/.config/i3/Script/script/toggle_redshift.sh 
 exec --no-startup-id discord
 exec --no-startup-id picom & 

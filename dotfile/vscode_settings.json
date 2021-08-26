@@ -46,5 +46,6 @@
     "platformio-ide.customPATH": "",
     "python.autoComplete.addBrackets": true,
     "python.autoUpdateLanguageServer": false,
-    "editor.snippetSuggestions": "bottom"
+    "editor.snippetSuggestions": "bottom",
+    "window.zoomLevel": 2
 }
